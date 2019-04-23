@@ -1,0 +1,14 @@
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\bin\Debug\netcoreapp2.1\Microservice2.deps.json
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\bin\Debug\netcoreapp2.1\Microservice2.runtimeconfig.json
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\bin\Debug\netcoreapp2.1\Microservice2.runtimeconfig.dev.json
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\bin\Debug\netcoreapp2.1\Microservice2.dll
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\bin\Debug\netcoreapp2.1\Microservice2.pdb
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\obj\Debug\netcoreapp2.1\Microservice2.csproj.CoreCompileInputs.cache
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\obj\Debug\netcoreapp2.1\Microservice2.RazorAssemblyInfo.cache
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\obj\Debug\netcoreapp2.1\Microservice2.RazorAssemblyInfo.cs
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\obj\Debug\netcoreapp2.1\Microservice2.AssemblyInfoInputs.cache
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\obj\Debug\netcoreapp2.1\Microservice2.AssemblyInfo.cs
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\obj\Debug\netcoreapp2.1\Microservice2.RazorTargetAssemblyInfo.cache
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\obj\Debug\netcoreapp2.1\Microservice2.dll
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\obj\Debug\netcoreapp2.1\Microservice2.pdb
+D:\dev\tuesday_time\MicroservicesApp\Microservice2\obj\Debug\netcoreapp2.1\Microservice2.csprojAssemblyReference.cache

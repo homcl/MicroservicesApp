@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice1", "Microservice1\Microservice1.csproj", "{D85364C2-94C3-4E21-B6E1-B7888DE42A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice2", "Microservice2\Microservice2.csproj", "{3DB1A8E2-1812-41CA-BCE6-B305663867CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D85364C2-94C3-4E21-B6E1-B7888DE42A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D85364C2-94C3-4E21-B6E1-B7888DE42A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D85364C2-94C3-4E21-B6E1-B7888DE42A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D85364C2-94C3-4E21-B6E1-B7888DE42A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB1A8E2-1812-41CA-BCE6-B305663867CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB1A8E2-1812-41CA-BCE6-B305663867CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB1A8E2-1812-41CA-BCE6-B305663867CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB1A8E2-1812-41CA-BCE6-B305663867CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2480AAD1-357C-497E-B67E-7FDFB340EA0F}
+	EndGlobalSection
+EndGlobal

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
 using Microservice1.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -39,13 +38,6 @@ namespace Microservice1.Controllers
             return CreatedAtAction(nameof(FoodController.GetFood), new {foodTypeKey = shoppingItem.Type}, shoppingItem);
         }
 
-        //// POST api/values
-        //[HttpPost("{shoppingItem}")]
-        //public string Post(FoodItem shoppingItem)
-        //{
-        //    return "Returned from POST";
-        //}
-
         // PUT: api/Food/5
         [HttpPut("{foodTypeKey}")]
         public void Put(string foodTypeKey, [FromBody] string value)
@@ -59,10 +51,4 @@ namespace Microservice1.Controllers
         {
         }
     }
-
-    // public class FoodItem
-    // {
-    //     public string Type { get; set; }
-    //     public string Item { get; set; }
-    // }
 }

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 
 namespace Microservice2.Controllers
 {
@@ -32,13 +29,7 @@ namespace Microservice2.Controllers
         {
             using (var client = new HttpClient())
             {
-                // var dictionaryToJson =JsonConvert.SerializeObject(value);
                 var response = await client.PostAsJsonAsync("http://localhost:5001/api/food", value);
-
-                // OR
-                //var responseAsString = jsonResponse.Content.ReadAsStringAsync();
-                // something else
-
                 return Ok(response.Headers.Location); 
             }
         }

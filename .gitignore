@@ -1,6 +1,8 @@
 .vs/
-./MicroservicesApp.sln.DotSettings.user
-./Microservice1/bin/Debug/
-./Microservice1/obj/
-./Microservice2/bin/Debug/
-./Microservice2/obj/
+MicroservicesApp.sln.DotSettings.user
+Microservice1/bin/Debug/netcoreapp2.1/
+Microservice1/obj/
+Microservice2/bin/Debug/netcoreapp2.1/
+Microservice2/obj/
+Microservice1.csproj.user
+Microservice2.csproj.user

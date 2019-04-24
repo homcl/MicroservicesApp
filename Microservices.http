@@ -2,10 +2,19 @@ POST http://localhost:5002/api/values HTTP/1.1
 Content-Type: application/json
 
 {
-	"type": "pie",
+	"type": "py",
 	"item": "Fruit"
 }
 
 ###
 
 GET http://localhost:5001/api/Food/pie HTTP/1.1
+
+###
+POST http://localhost:5001/api/food HTTP/1.1
+Content-Type: application/json
+
+{
+	"type": "pie",
+	"item": "Fruit"
+}

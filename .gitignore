@@ -1,2 +1,6 @@
 .vs/
-MicroservicesApp.sln.DotSettings.user
+./MicroservicesApp.sln.DotSettings.user
+./Microservice1/bin/Debug/
+./Microservice1/obj/
+./Microservice2/bin/Debug/
+./Microservice2/obj/

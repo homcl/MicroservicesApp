@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using Microservice1.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Microservice1.Controllers
@@ -11,20 +9,13 @@ namespace Microservice1.Controllers
     [ApiController]
     public class FoodController : ControllerBase
     {
-        public Dictionary<string, string> _foodItem { get; set; }
-
-        public FoodController()
+        private static Dictionary<string, string> _foodItem = new Dictionary<string, string>()
         {
-            Dictionary<string, string> foodItem = new Dictionary<string, string>()
-            {
-                {"fruit", "banana"},
-                {"drink", "wine"},
-                {"cake", "doughnut"},
-                {"thai", "noodles" }
-            };
-
-            _foodItem = foodItem;
-        }
+            {"fruit", "banana"},
+            {"drink", "wine"},
+            {"cake", "doughnut"},
+            {"thai", "noodles" }
+        };
 
         // GET: api/Food
         [HttpGet]
@@ -34,27 +25,25 @@ namespace Microservice1.Controllers
         }
 
         // GET: api/Food/5
-        [HttpGet("{foodTypeKey}", Name = "Get")]
-        public string Get(string foodTypeKey)
+        [HttpGet("{foodTypeKey}", Name = "GetFood")]
+        public string GetFood(string foodTypeKey)
         {
             return _foodItem[foodTypeKey];
         }
 
-        
-        // POST api/values
+        // POST api/food
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<IDictionary<string, string>> Post(FoodItem shoppingItem)
         {
+            _foodItem.Add(shoppingItem.Type, shoppingItem.Item);
+            return CreatedAtAction(nameof(FoodController.GetFood), new {foodTypeKey = shoppingItem.Type}, shoppingItem);
         }
-         
-        // POST: api/Food
-        //[HttpPost("{foodTypeKey}/{foodTypeValue}", Name = "Post")]
-        //[HttpPost]
-        // public void Post([FromBody] string foodTypeKey, [FromBody] string foodTypeValue)
-        //public void Post([FromBody] string foodTypeKey)
+
+        //// POST api/values
+        //[HttpPost("{shoppingItem}")]
+        //public string Post(FoodItem shoppingItem)
         //{
-           // _foodItem.Add(foodTypeKey, foodTypeValue);
-           //foodItem.Add("ice cream", "mint choc chip");
+        //    return "Returned from POST";
         //}
 
         // PUT: api/Food/5
@@ -70,4 +59,10 @@ namespace Microservice1.Controllers
         {
         }
     }
+
+    // public class FoodItem
+    // {
+    //     public string Type { get; set; }
+    //     public string Item { get; set; }
+    // }
 }
